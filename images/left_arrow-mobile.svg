@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="77px" viewBox="0 0 53 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shake_Homepage_01" transform="translate(-272.000000, -1414.000000)">
+            <g id="Group-11" transform="translate(299.000000, 1453.000000) scale(-1, 1) translate(-299.000000, -1453.000000) translate(273.000000, 1415.000000)">
+                <path d="M51.5,0 C51.3095238,12.7736318 48.0714286,24.5771144 41.7857143,35.4104478 C35.5,46.2437811 25.4047619,56.1069652 11.5,65" id="Line-2" stroke="#FFFFFF" stroke-width="2" opacity="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,9"></path>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="65.5" width="10" height="10" rx="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
