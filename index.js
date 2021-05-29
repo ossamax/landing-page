@@ -26,30 +26,25 @@ let counter = 1;
 let size = carsoulimgs[0].clientWidth + 40;
 itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 
-console.log(counter);
 //move to the left
 leftArrow.addEventListener("click", () => {
   counter--;
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
-  console.log(counter);
 });
 
 //move to the right
 rightArrow.addEventListener("click", () => {
   counter++;
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
-  console.log(counter);
 });
 
 itemsWrapper.addEventListener("transitionend", () => {
   if (carsoulimgs[counter].id === "lastclone") {
     counter = carsoulimgs.length - 2;
-    console.log(counter);
     itemsWrapper.style.transform = "translateX(-" + size + "px)";
   }
   if (carsoulimgs[counter].id === "firstclone") {
-    counter = carsoulimgs.length;
-    console.log(counter);
-    itemsWrapper.style.transform = "translateX(-" + size + "px)";
+    counter = 6;
+    itemsWrapper.style.transform = "translateX(-" + size * counter + "px)";
   }
 });
