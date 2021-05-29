@@ -43,9 +43,13 @@ rightArrow.addEventListener("click", () => {
 
 itemsWrapper.addEventListener("transitionend", () => {
   if (carsoulimgs[counter].id === "lastclone") {
+    counter = carsoulimgs.length - 2;
+    console.log(counter);
+    itemsWrapper.style.transform = "translateX(-" + size + "px)";
+  }
+  if (carsoulimgs[counter].id === "firstclone") {
     counter = carsoulimgs.length;
     console.log(counter);
     itemsWrapper.style.transform = "translateX(-" + size + "px)";
   }
-  
 });
