@@ -22,7 +22,7 @@ slider.forEach((slide, index) => {
   slide.style.left = (sliderWidth + 40) * index + "px";
 });
 
-let counter = 0;
+let counter = 1;
 let size = carsoulimgs[0].clientWidth + 40;
 itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 
@@ -43,7 +43,9 @@ rightArrow.addEventListener("click", () => {
 
 itemsWrapper.addEventListener("transitionend", () => {
   if (carsoulimgs[counter].id === "lastclone") {
-    counter = carsoulimgs.length - 1;
-    itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
+    counter = carsoulimgs.length;
+    console.log(counter);
+    itemsWrapper.style.transform = "translateX(-" + size + "px)";
   }
+  
 });
