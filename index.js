@@ -26,14 +26,12 @@ let counter = 1;
 let size = carsoulimgs[0].clientWidth + 40;
 itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 
-
 leftArrow.addEventListener("click", () => {
   if (counter <= 0) return;
   counter--;
   itemsWrapper.style.transition = "transform .3s ease-in-out";
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 });
-
 
 rightArrow.addEventListener("click", () => {
   if (counter > 6) return;
@@ -51,4 +49,11 @@ itemsWrapper.addEventListener("transitionend", () => {
     counter = 6;
     itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
   }
+});
+
+const scrollTotopbtn = document.querySelector(".circle");
+
+scrollTotopbtn.addEventListener("click", () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0;
 });
