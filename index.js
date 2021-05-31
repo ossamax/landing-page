@@ -19,7 +19,7 @@ const slider = Array.from(itemsWrapper.children);
 const sliderWidth = slider[0].getBoundingClientRect().width;
 
 slider.forEach((slide, index) => {
-  slide.style.left = (sliderWidth + 40) * index + "px";
+  slide.style.left = (sliderWidth + 50) * index + "px";
 });
 
 let counter = 1;
@@ -44,12 +44,10 @@ rightArrow.addEventListener("click", () => {
 
 itemsWrapper.addEventListener("transitionend", () => {
   if (carsoulimgs[counter].id === "lastclone") {
-    itemsWrapper.style.transition = "none";
     counter = 1;
     itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
   }
   if (carsoulimgs[counter].id === "firstclone") {
-    itemsWrapper.style.transition = "none";
     counter = 6;
     itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
   }
