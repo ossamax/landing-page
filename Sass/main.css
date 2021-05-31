@@ -927,7 +927,6 @@ button {
 .slider .wrapper {
   width: 88%;
   margin: auto;
-  padding: 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

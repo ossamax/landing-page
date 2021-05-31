@@ -28,23 +28,28 @@ itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 
 //move to the left
 leftArrow.addEventListener("click", () => {
+  if (counter <= 0) return;
   counter--;
+  itemsWrapper.style.transition = "transform .3s ease-in-out";
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 //move to the right
 rightArrow.addEventListener("click", () => {
   counter++;
+  itemsWrapper.style.transition = "transform .3s ease-in-out";
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 itemsWrapper.addEventListener("transitionend", () => {
   if (carsoulimgs[counter].id === "lastclone") {
-    counter = carsoulimgs.length - 2;
-    itemsWrapper.style.transform = "translateX(-" + size + "px)";
+    itemsWrapper.style.transition = "none";
+    counter = 1;
+    itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
   }
   if (carsoulimgs[counter].id === "firstclone") {
+    itemsWrapper.style.transition = "none";
     counter = 6;
-    itemsWrapper.style.transform = "translateX(-" + size * counter + "px)";
+    itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
   }
 });
