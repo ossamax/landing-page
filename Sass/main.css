@@ -59,7 +59,7 @@ button {
 }
 
 .navigation .wrapper .nav_links a {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   margin: 0 0.3rem;
   color: #1c1a1a;
   font-weight: 600;
@@ -845,6 +845,7 @@ button {
 
 .take_look .wrapper .header h1 {
   padding: 1rem 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -1310,6 +1311,25 @@ footer .wrapper {
           align-items: center;
   padding: 2rem 0;
   width: 85%;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  footer .wrapper .main_footer_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer .wrapper .main_footer_wrapper .logo_text {
+    width: 45%;
+  }
 }
 
 footer .wrapper .main_footer_wrapper .logo_text img {
@@ -1320,6 +1340,12 @@ footer .wrapper .main_footer_wrapper .logo_text p {
   color: white;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 600px) {
+  footer .wrapper .main_footer_wrapper .logo_text p {
+    width: 60%;
+  }
 }
 
 footer .wrapper .main_footer_wrapper .company_downloads {
@@ -1337,6 +1363,13 @@ footer .wrapper .main_footer_wrapper .company_downloads {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  footer .wrapper .main_footer_wrapper .company_downloads {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 footer .wrapper .main_footer_wrapper .company_downloads div {
@@ -1373,6 +1406,18 @@ footer .wrapper .main_footer_wrapper .company_downloads div div a {
 
 footer .wrapper .main_footer_wrapper .company_downloads div div a:hover {
   color: #2f3170;
+}
+
+footer .wrapper .main_footer_wrapper .arrow_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .wrapper .main_footer_wrapper .arrow_top .circle {

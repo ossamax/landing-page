@@ -26,7 +26,7 @@ let counter = 1;
 let size = carsoulimgs[0].clientWidth + 40;
 itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 
-//move to the left
+
 leftArrow.addEventListener("click", () => {
   if (counter <= 0) return;
   counter--;
@@ -34,7 +34,7 @@ leftArrow.addEventListener("click", () => {
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
 });
 
-//move to the right
+
 rightArrow.addEventListener("click", () => {
   if (counter > 6) return;
   counter++;
