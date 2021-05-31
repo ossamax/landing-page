@@ -36,6 +36,7 @@ leftArrow.addEventListener("click", () => {
 
 //move to the right
 rightArrow.addEventListener("click", () => {
+  if (counter > 6) return;
   counter++;
   itemsWrapper.style.transition = "transform .3s ease-in-out";
   itemsWrapper.style.transform = "translateX(" + -size * counter + "px)";
