@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -263,7 +267,7 @@ button {
   width: 100%;
   height: 30%;
   position: absolute;
-  bottom: 0rem;
+  bottom: -1rem;
   z-index: -1;
 }
 
@@ -276,6 +280,9 @@ button {
 .how_it_works {
   background-color: #f98561;
   padding: 2rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -401,8 +408,22 @@ button {
   width: 100%;
 }
 
+.sticky-1 {
+  z-index: 1;
+}
+
+.sticky-2 {
+  z-index: 2;
+}
+
+.sticky-3 {
+  z-index: 3;
+}
+
 .customize {
   position: relative;
+  z-index: 100;
+  background-color: white;
 }
 
 .customize .wrapper {
@@ -496,6 +517,12 @@ button {
   .customize .path {
     height: 50%;
   }
+}
+
+.app_features {
+  position: relative;
+  z-index: 100;
+  background-color: white;
 }
 
 .app_features .wrapper {
@@ -1126,5 +1153,98 @@ button {
 .slider .wrapper .slider_items .slider_btns .right_arrow {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.getstarted .wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0;
+}
+
+.getstarted .wrapper .header h1 {
+  font-weight: 800;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .getstarted .wrapper .header h1 {
+    font-size: 4rem;
+  }
+}
+
+.getstarted .wrapper .header h1 span {
+  display: inline-block;
+  background-image: url("../images/orange_Rectangle.svg");
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+
+.getstarted .wrapper .header p {
+  color: #1c1a1a;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0 0.6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .getstarted .wrapper .header p {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+}
+
+.getstarted .wrapper .header .download_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.getstarted .wrapper .header .download_links a {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.getstarted .wrapper .header .download_links a img {
+  width: 120px;
+}
+
+.getstarted .wrapper .header .download_links a:hover {
+  background-color: #f98561;
 }
 /*# sourceMappingURL=main.css.map */
