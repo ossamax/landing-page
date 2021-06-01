@@ -60,6 +60,11 @@ scrollTotopbtn.addEventListener("click", () => {
 
 const loader = document.querySelector(".loading_animation");
 
+var myVar;
+
 function finishLoading() {
+  myVar = setTimeout(showPage, 1000);
+}
+function showPage() {
   loader.classList.add("hide");
 }
