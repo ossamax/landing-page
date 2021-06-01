@@ -1,13 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".hero_animate", {
-  y: 0,
-  duration: 1.3,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".hero_animate",
-  },
-});
+
 gsap.to(".wrp", {
   y: 0,
   duration: 1.4,
@@ -70,7 +63,6 @@ gsap
       trigger: ".slider",
       start: "top top",
       end: "top",
-      scrub: true,
     },
   })
   .to(".bg", { width: "100%" }, 0);

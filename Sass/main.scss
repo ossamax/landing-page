@@ -69,6 +69,7 @@ button {
     padding: 3rem 0 0;
     transform: translateY(5rem);
     opacity: 0;
+    animation: hero 1s ease-in-out forwards;
     h1 {
       font-weight: 800;
       padding: 1rem 2.5rem;
@@ -942,5 +943,16 @@ footer {
       text-align: center;
       color: white;
     }
+  }
+}
+
+@keyframes hero {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
