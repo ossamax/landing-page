@@ -20,7 +20,68 @@ button {
   background-color: none;
   outline: none;
 }
+body {
+  position: relative;
+}
 
+.loading_animation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 200;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    div {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      .up {
+        animation-delay: 0s;
+      }
+      .down {
+        animation-delay: .4s;
+      }
+      .left {
+        animation-delay: .6s;
+      }
+      .right {
+        animation-delay: .2s;
+      }
+    }
+    .t_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .b_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: animateImg 0.3s ease-in-out forwards;
+    }
+  }
+}
+.hide {
+  display: none;
+  opacity: 0;
+}
 .wrapper {
   width: 95%;
   margin: auto;
@@ -945,6 +1006,15 @@ footer {
   }
   100% {
     transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes animateImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

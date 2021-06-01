@@ -1,4 +1,3 @@
-
 var Btns = $(".btn");
 var content = $(".imgs");
 
@@ -58,3 +57,9 @@ scrollTotopbtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+const loader = document.querySelector(".loading_animation");
+
+function finishLoading() {
+  loader.classList.add("hide");
+}

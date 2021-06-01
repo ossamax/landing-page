@@ -13,7 +13,19 @@
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <title>Stark</title>
   </head>
-  <body>
+  <body onload="finishLoading()">
+    <div class="loading_animation">
+      <div class="wrapper">
+        <div class="t_wrapper">
+          <img src="images/Up.svg" alt="" class="up" />
+          <img src="images/Down.svg" alt="" class="down" />
+        </div>
+        <div class="b_wrapper">
+          <img src="images/Left.svg" alt="" class="left" />
+          <img src="images/Right.svg" alt="" class="right" />
+        </div>
+      </div>
+    </div>
     <div class="navigation">
       <div class="wrapper">
         <a href="index.html" class="app_logo">
