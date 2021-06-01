@@ -68,3 +68,12 @@ function finishLoading() {
 function showPage() {
   loader.classList.add("hide");
 }
+
+const links = document.querySelectorAll(".link");
+
+links.forEach((link) =>
+  link.addEventListener("click", () => {
+    var el = document.getElementById(link.getAttribute("data-link"));
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  })
+);

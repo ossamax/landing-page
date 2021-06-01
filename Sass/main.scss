@@ -49,13 +49,13 @@ body {
         animation-delay: 0s;
       }
       .down {
-        animation-delay: .4s;
+        animation-delay: 0.4s;
       }
       .left {
-        animation-delay: .6s;
+        animation-delay: 0.6s;
       }
       .right {
-        animation-delay: .2s;
+        animation-delay: 0.2s;
       }
     }
     .t_wrapper {
@@ -354,6 +354,8 @@ body {
   position: relative;
   z-index: 100;
   background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   .customize {
     position: relative;
     z-index: 100;
@@ -817,8 +819,6 @@ body {
 
   .getstarted {
     overflow: hidden;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     .wrapper {
       padding: 3rem 0;
 
