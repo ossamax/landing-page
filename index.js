@@ -1,3 +1,4 @@
+
 var Btns = $(".btn");
 var content = $(".imgs");
 
@@ -54,6 +55,6 @@ itemsWrapper.addEventListener("transitionend", () => {
 const scrollTotopbtn = document.querySelector(".circle");
 
 scrollTotopbtn.addEventListener("click", () => {
-  document.body.scrollTop = 0; // For Safari
+  document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
